@@ -26,25 +26,25 @@ Les dépendances listées dans Cargo.toml.
 
 Clonez le dépôt :bash
 
-'''git clone https://github.com/<votre-nom>/bitcoin-address-generator.git
-cd bitcoin-address-generator'''
+```git clone https://github.com/<votre-nom>/bitcoin-address-generator.git```
+```cd bitcoin-address-generator```
 
 Ajoutez les dépendances dans votre Cargo.toml :toml
 
-''
+```
 [dependencies]
 secp256k1 = { version = "0.29", features = ["rand"] }
 rand = "0.8"
 sha2 = "0.10"
 ripemd = "0.1"
 hex = "0.4"
-''
+```
 
 Compilez et exécutez :bash
 
-''
+```
 cargo run
-''
+```
 
 ## UtilisationLancer le programme :
 Exécutez cargo run pour lancer le programme par défaut. Il va :Générer une adresse Bitcoin et vérifier sa validité cryptographique.
@@ -54,9 +54,9 @@ Afficher des informations techniques sur la cryptographie utilisée.
 
 ## Personnaliser les adresses vanity :
 Modifiez la liste target_words dans la fonction main pour chercher d'autres mots :rust
-''
+```
 let target_words = vec!["monnom", "cool"];
-''
+```
 
 Note : Les mots longs augmentent considérablement le temps de génération.
 
