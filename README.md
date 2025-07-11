@@ -26,8 +26,8 @@ Les dépendances listées dans Cargo.toml.
 
 Clonez le dépôt :bash
 
-''git clone https://github.com/<votre-nom>/bitcoin-address-generator.git
-cd bitcoin-address-generator''
+'''git clone https://github.com/<votre-nom>/bitcoin-address-generator.git
+cd bitcoin-address-generator'''
 
 Ajoutez les dépendances dans votre Cargo.toml :toml
 
