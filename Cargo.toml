@@ -1,0 +1,11 @@
+[package]
+name = "btcgenerator"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+secp256k1 = { version = "0.29", features = ["rand"] }
+rand = "0.8"
+sha2 = "0.10"
+ripemd = "0.1"
+hex = "0.4"
